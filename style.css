@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+body{
+	scroll-behavior: smooth;
+	font-size: 16px;
+	font-family: 'Poppins', sans-serif;
+}
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+.container .inside-container{
+	display: flex;
+	max-width: 100%;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem;
+}
+.container .inside-container .one{
+	background: #E38826;
+	border-radius: .5rem 0 0 .5rem;
+}
+.container .inside-container .two{
+	background: #006970;
+}
+.container .inside-container .three{
+	background: #004241;
+	border-radius: 0 .5rem .5rem 0;
+}
+.container .inside-container .box{
+	padding: 2rem;
+	height: 28rem;
+	max-width: 19rem;
+}
+.container .inside-container .box .inside-box .icon{
+	margin-bottom: 2rem;
+}
+.container .inside-container .box .inside-box .title{
+	font-family: 'Roboto Condensed', sans-serif;
+	margin-bottom: 1rem;
+	color: #fff;
+	font-size: 2rem;
+}
+.container .inside-container .box .inside-box .text{
+	margin-bottom: 5rem;
+}
+.container .inside-container .box .inside-box .button{
+	border: #fff solid 1px;
+	background: #fff;
+	width: 8rem;
+	border-radius: 1.5rem;
+	padding: .5rem 1rem;
+}
+.container .inside-container .one .inside-box .button{
+	color: #E38826;
+}
+.container .inside-container .two .inside-box .button{
+	color: #006970;
+}
+.container .inside-container .three .inside-box .button{
+	color: #004241;
+}
+.container .inside-container .box .inside-box .button:hover{
+	background: none;
+	border: #fff solid 1px;
+	color: #fff;
+	cursor: pointer;
+}
+
+@media (max-width:768px){
+	.container .inside-container{
+		flex-direction: column;
+	}
+	.container .inside-container .box{
+		border-radius: 0;
+	}
+
+}
